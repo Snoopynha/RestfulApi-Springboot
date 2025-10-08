@@ -3,6 +3,7 @@ package com.camilly.api.rest.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table  (name = "Usuario")
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
