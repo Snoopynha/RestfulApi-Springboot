@@ -2,10 +2,14 @@ package com.camilly.api.rest.model;
 
 import jakarta.persistence.*;
 
+// Anotações JPA para mapear a classe como uma entidade
 @Entity
-@Table  (name = "Usuario")
+// Define o nome da tabela no banco de dados
+@Table (name = "Usuario")
 public class Usuario {
+    // Define o campo 'id' como chave primária
     @Id
+    // Define a estratégia de geração do ID
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nome;
@@ -16,6 +20,7 @@ public class Usuario {
     // Construtores
     public Usuario() {}
 
+    // Construtor com parâmetros
     public Usuario(long id, String nome, String sobrenome, int idade, String ocupacao){
         this.id = id;
         this.nome = nome;

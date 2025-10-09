@@ -8,11 +8,14 @@ import org.springframework.stereotype.Service;
 import com.camilly.api.rest.model.Usuario;
 import com.camilly.api.rest.respository.UsuarioRepository;
 
+// Camada de serviço para lógica de negócios relacionada a usuários
 @Service
 public class UsuarioService {
+    // Injeção do repositório de usuários
     @Autowired
     private UsuarioRepository usuarioRepository;
 
+    // Métodos para operações CRUD
     public Usuario criarUsuario(Usuario usuario){
         return usuarioRepository.save(usuario);
     }
