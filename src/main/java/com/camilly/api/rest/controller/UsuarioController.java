@@ -1,4 +1,4 @@
-package com.camilly.api.rest.contoller;
+package com.camilly.api.rest.controller;
 
 import java.net.URI;
 import java.util.List;

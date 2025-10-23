@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.camilly.api.rest.model.Usuario;
-import com.camilly.api.rest.respository.UsuarioRepository;
+import com.camilly.api.rest.repository.UsuarioRepository;
 
 // Camada de serviço para lógica de negócios relacionada a usuários
 @Service

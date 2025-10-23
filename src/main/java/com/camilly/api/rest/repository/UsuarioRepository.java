@@ -1,4 +1,4 @@
-package com.camilly.api.rest.respository;
+package com.camilly.api.rest.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.camilly.api.rest.model.Usuario;
