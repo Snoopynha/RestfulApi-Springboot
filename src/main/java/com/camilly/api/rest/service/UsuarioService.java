@@ -38,12 +38,12 @@ public class UsuarioService {
                 .collect(Collectors.toList());
     }
 
-    public UsuarioResponse buscarUsuarioPorId(Long id) {
+    public UsuarioResponse buscarUsuarioPorId(@lombok.NonNull Long id) {
         Optional<Usuario> usuario = usuarioRepository.findById(id);
         return usuario.map(UsuarioMapper::toResponse).orElse(null);
     }
 
-    public UsuarioResponse atualizarUsuario(Long id, UsuarioRequest usuarioRequest) {
+    public UsuarioResponse atualizarUsuario(@lombok.NonNull Long id, UsuarioRequest usuarioRequest) {
         return usuarioRepository.findById(id)
                 .map(usuario -> {
                     usuario.setNome(usuarioRequest.getNome());
@@ -56,7 +56,7 @@ public class UsuarioService {
                 .orElse(null);
     }
 
-    public boolean deletarUsuario(Long id) {
+    public boolean deletarUsuario(@lombok.NonNull Long id) {
         if(!usuarioRepository.existsById(id)){
             return false;
         }

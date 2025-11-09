@@ -11,7 +11,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.camilly.api.rest.dto.UsuarioRequest;
 import com.camilly.api.rest.dto.UsuarioResponse;
-import com.camilly.api.rest.model.Usuario;
 import com.camilly.api.rest.service.UsuarioService;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
